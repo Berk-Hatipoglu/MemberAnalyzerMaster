@@ -59,7 +59,7 @@ git clone https://github.com/Berk-Hatipoglu/MemberAnalyzerMaster
 cd MemberAnalyzerMaster
 
 # Build and start the Docker containers
-docker-compose up -d
+docker compose up -d
 ```
 
 ## Usage
