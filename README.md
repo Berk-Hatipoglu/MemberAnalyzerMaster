@@ -63,6 +63,9 @@ docker compose up -d
 
 # Create topic for kafka stream
 docker exec -it broker kafka-topics --create --topic users_created --bootstrap-server broker:29092 --partitions 1 --replication-factor 1
+
+# Start kafka stream
+python spark_stream.py
 ```
 
 ## Usage
