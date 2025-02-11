@@ -72,10 +72,8 @@ docker exec -it cassandra cqlsh -u cassandra -p cassandra localhost 9042
 
 # If you want to see the data in the tables, you can use the following queries
 select * from spark_streams.created_users;
-select * from spark_streams.created_users;
 select * from spark_streams.age;
 select * from spark_streams.gender;
-select * from spark_streams.city;
 select * from spark_streams.country;
 ```
 
