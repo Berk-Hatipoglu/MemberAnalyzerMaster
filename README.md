@@ -66,6 +66,17 @@ docker exec -it broker kafka-topics --create --topic users_created --bootstrap-s
 
 # Start kafka stream
 python spark_stream.py
+
+# Switch to cassandra terminal from another terminal
+docker exec -it cassandra cqlsh -u cassandra -p cassandra localhost 9042
+
+# If you want to see the data in the tables, you can use the following queries
+select * from spark_streams.created_users;
+select * from spark_streams.created_users;
+select * from spark_streams.age;
+select * from spark_streams.gender;
+select * from spark_streams.city;
+select * from spark_streams.country;
 ```
 
 ## Usage
