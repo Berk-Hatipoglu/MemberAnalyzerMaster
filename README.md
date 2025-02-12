@@ -1,11 +1,8 @@
 # MemberAnalyzerMaster
 
-Analyze all members and create graphs.
-
 ## Project Purpose
 
-- Working with containers in a Docker environment.
-- Monitor and analyze users' interactions with web or mobile applications in real-time.
+This project focuses on monitoring and analyzing users interactions with web or mobile applications in real-time within a containerized Docker environment. User data is first sent via an API, which is then orchestrated by Apache Airflow and streamed to Apache Kafka. Kafka distributes the data to Apache Spark, where transformations and processing occur before storing the analyzed results in Apache Cassandra for further retrieval and analysis. The processed data is then stored in Apache Cassandra for further analysis and querying. After performing analysis on the processed data, the analysis results are stored in tables in Apache Cassandra. These tables are used to generate visualizations. PostgreSQL is used for metadata management in Airflow, while Apache ZooKeeper coordinates Kafka clusters. Additionally, Schema Registry ensures data consistency, and the Control Center facilitates Kafka monitoring.
 
 ## Project Architecture
 
